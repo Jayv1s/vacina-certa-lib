@@ -30,13 +30,13 @@ public class User {
     public String lastName;
 
     @Column(name = "data_nascimento", length = 10)
-    public String dateOfBirth;
+    public LocalDateTime dateOfBirth;
 
     @Column(name = "documento", length = 30)
     public String document;
 
     @Column(name = "tipo_documento")
-    public Enum<DocumentsType> documentType;
+    public DocumentsType documentType;
 
     @Column(name = "criado_em")
     public LocalDateTime createdAt;

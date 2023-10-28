@@ -18,9 +18,9 @@ public class UsersDTO {
     public String id;
     public String firstName;
     public String lastName;
-    public String dateOfBirth;
+    public LocalDateTime dateOfBirth;
     public String document;
-    public Enum<DocumentsType> documentType;
+    public DocumentsType documentType;
     public LocalDateTime createdAt;
     public LocalDateTime updatedAt;
     private Set<UsersVaccines> vaccines;

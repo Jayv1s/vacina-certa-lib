@@ -1,6 +1,5 @@
 package com.entities.db;
 
-import com.enums.DocumentsType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -36,7 +35,7 @@ public class User {
     public String document;
 
     @Column(name = "tipo_documento")
-    public DocumentsType documentType;
+    public String documentType;
 
     @Column(name = "criado_em")
     public LocalDateTime createdAt;

@@ -22,12 +22,12 @@ public class UsersVaccines {
     public String id;
 
     //@Column(name = "usuario_id")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="usuario_id", nullable=false)
     private User user;
 
     //@Column(name = "vacina_id")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="vacina_id", nullable=false)
     private Vaccine vaccine;
 }

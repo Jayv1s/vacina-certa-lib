@@ -8,6 +8,14 @@
     <artifactId>SharedEntity</artifactId>
     <version>1.0.1</version>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/Jayv1s/vacina-certa-lib</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>

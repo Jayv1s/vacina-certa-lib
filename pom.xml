@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.vacina-certa</groupId>
-    <artifactId>SharedEntity</artifactId>
-    <version>1.0.1</version>
+    <artifactId>sharedentity</artifactId>
+    <version>1.0.2</version>
 
     <distributionManagement>
         <repository>

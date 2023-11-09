@@ -37,7 +37,7 @@ public class User {
     @Column(name = "tipo_documento")
     public String documentType;
 
-    @Column(name = "criado_em")
+    @Column(name = "criado_em", updatable=false)
     public LocalDateTime createdAt;
 
     @Column(name = "atualizado_em")

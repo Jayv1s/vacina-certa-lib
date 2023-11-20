@@ -42,4 +42,14 @@ public class Vaccine {
 
     @Column(name = "atualizado_em", length=4)
     public LocalDateTime updatedAt;
+
+    @Column(name = "dose")
+    public String dosage;
+
+    @Column(name = "descricao")
+    public String description;
+
+    @Column(name = "obrigatorio")
+    public Boolean required;
+
 }

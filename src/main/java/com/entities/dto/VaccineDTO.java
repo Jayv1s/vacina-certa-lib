@@ -23,4 +23,7 @@ public class VaccineDTO {
     public LocalDateTime createdAt;
     public LocalDateTime updatedAt;
     private Set<UsersVaccines> vaccines;
+    private String dosage;
+    private String description;
+    private Boolean required;
 }

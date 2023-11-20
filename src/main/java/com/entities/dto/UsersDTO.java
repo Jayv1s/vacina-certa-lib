@@ -15,13 +15,15 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UsersDTO {
-    public String id;
-    public String firstName;
-    public String lastName;
-    public LocalDateTime dateOfBirth;
-    public String document;
-    public DocumentsType documentType;
-    public LocalDateTime createdAt;
-    public LocalDateTime updatedAt;
+    private String id;
+    private String firstName;
+    private String lastName;
+    private LocalDateTime dateOfBirth;
+    private String document;
+    private DocumentsType documentType;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
     private Set<UsersVaccines> vaccines;
+    private String phone;
+    private String nickname;
 }

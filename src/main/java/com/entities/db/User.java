@@ -20,26 +20,32 @@ public class User {
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid")
     @Column(length=32)
-    public String id;
+    private String id;
 
     @Column(name = "primeiro_nome", length = 50)
-    public String firstName;
+    private String firstName;
 
     @Column(name = "ultimo_nome", length = 50)
-    public String lastName;
+    private String lastName;
 
     @Column(name = "data_nascimento", length = 10)
-    public LocalDateTime dateOfBirth;
+    private LocalDateTime dateOfBirth;
 
     @Column(name = "documento", length = 30)
-    public String document;
+    private String document;
 
     @Column(name = "tipo_documento")
-    public String documentType;
+    private String documentType;
 
     @Column(name = "criado_em", updatable=false)
-    public LocalDateTime createdAt;
+    private LocalDateTime createdAt;
 
     @Column(name = "atualizado_em")
-    public LocalDateTime updatedAt;
+    private LocalDateTime updatedAt;
+
+    @Column(name = "telefone")
+    private String phone;
+
+    @Column(name = "nome_utilizado")
+    private String nickname;
 }
